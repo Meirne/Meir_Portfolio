@@ -124,7 +124,7 @@ a{
 
 a:visited{
     color: #202020;
-    -webkit-text-stroke: 0.001px #202020; 
+    -webkit-text-stroke: 0; 
 }
 
 
@@ -224,13 +224,13 @@ a:visited{
  .projects-grid img:hover{
     transform: scale(1.03) ;
     transition: transform ease-out 0.3s;
- }
- .projects-grid img:hover{
     background-color: #FFFFD0;
-    padding: 0.05rem;
+    padding: 0.05rem; 
  }
+
  .h-proj{
     font-family: "Merriweather", sans-serif; 
+    color: #0a0817;
  }
  
 
@@ -350,7 +350,7 @@ dotlottie-player{
         padding-right: 0;
     }
     .nav-links div{
-        flex-basis: 90px;   
+        flex-basis: clamp(55px,70px,5rem);   
     }
     .nav a {
         font-size: 0.8rem;
@@ -398,7 +398,7 @@ dotlottie-player{
 
      .projects-grid{
         grid-template: auto / auto ;
-        row-gap: 8rem;   
+        row-gap: 6rem;   
      }
 
     .per-touch {
