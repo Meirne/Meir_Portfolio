@@ -106,6 +106,9 @@ a{
 .nav-links div{
     flex-basis: 150px;   
 }
+.projects a{
+    color: #000000;
+}
 
 .nav a{
     color: #FFFBE6  ;
