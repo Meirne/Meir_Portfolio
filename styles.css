@@ -124,6 +124,7 @@ a{
 
 a:visited{
     color: #202020;
+    -webkit-text-stroke: 0.001px #202020; 
 }
 
 
