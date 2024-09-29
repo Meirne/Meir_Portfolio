@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="200" viewBox="0 0 400 200">
+    <!-- הטקסט Meir -->
+    <text id="text" x="50" y="100" font-family="serif" font-size="50" fill="black" stroke="none">
+        Meir
+    </text>
+
+    <!-- נוצה -->
+    <path id="feather" d="M40 20 C60 30, 100 30, 120 20 S 160 30, 200 20" fill="none" stroke="blue" stroke-width="2"/>
+
+    <!-- אנימציה לכתיבת הטקסט -->
+    <animate 
+        xlink:href="#text" 
+        attributeName="stroke-dashoffset" 
+        from="500" to="0" 
+        dur="3s" 
+        fill="freeze" 
+        repeatCount="1" 
+        begin="0.5s" 
+    />
+    
+    <!-- אנימציה של הנוצה -->
+    <animateMotion 
+        xlink:href="#feather" 
+        dur="3s" 
+        repeatCount="1" 
+        path="M50,100 Q150,50 300,100" 
+        fill="freeze"
+        begin="0s"
+    />
+</svg>
